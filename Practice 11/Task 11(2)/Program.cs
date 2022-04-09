@@ -7,7 +7,7 @@ namespace Task_11_2_
     {
         static void Main(string[] args)
         {
-            int mascount = 2;
+            int mascount = 5;
             Building[] build = new Building[mascount];
             Console.WriteLine("Выберите создаваемый объект: ");
             Console.WriteLine("1. Building \n2. Office \n3. Factory");
