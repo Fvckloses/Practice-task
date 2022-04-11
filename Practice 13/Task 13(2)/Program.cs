@@ -3,6 +3,7 @@
 namespace Task_13_2_
 {
     internal class Program
+        //Использован сторонний код
     {
         static void Main(string[] args)
         {
