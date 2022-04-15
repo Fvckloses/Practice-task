@@ -10,7 +10,7 @@ namespace Task_16_1_
         {
             int sum = 0;
             string path = @"f.txt";
-            string[] readText = File.ReadAllLines(path);//массив в котором хранится содержимое файла 
+            string[] readText = File.ReadAllLines(path);
             var NumbersInFile = File.ReadAllText("f.txt")
                 .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(s => s.Replace(".", ","))

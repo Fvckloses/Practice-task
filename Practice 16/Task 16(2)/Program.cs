@@ -34,7 +34,7 @@ namespace Task_16_2_
         }
         private static void ReverseFile(string path)
         {
-            string pathoutput = @"D:\Practice16Reverse.txt";
+            string pathoutput = @"Task16Reverse.txt";
             File.WriteAllLines(pathoutput, File.ReadAllLines(path).Reverse());
         }
         private static string FirstLetterLine(string path, char firstChar)
@@ -79,7 +79,7 @@ namespace Task_16_2_
         {
             try
             {
-                using (StreamReader sr = new StreamReader("D:\\Practice16.txt"))
+                using (StreamReader sr = new StreamReader("Task 16(2) first.txt"))
                 {
                     String line = sr.ReadToEnd();
                     Console.WriteLine(line);
