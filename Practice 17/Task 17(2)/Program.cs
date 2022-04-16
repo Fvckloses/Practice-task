@@ -44,7 +44,7 @@ namespace Task_17_2_
             }
             Console.WriteLine();
             Console.WriteLine("Описание стола: 0 - нет, 1 - есть");
-            Console.WriteLine("Опишите цифрами через enter наличие этих компонентов: \n -Столешница \n -Сиденье");
+            Console.WriteLine("Опишите цифрами через enter наличие этих компонентов: \n -Столешница \n -Ножки");
             string a1 = Console.ReadLine();
             string b1 = Console.ReadLine();
             if (a1 == "1")
@@ -55,7 +55,6 @@ namespace Task_17_2_
             {
                 a1 = "false";
             }
-
             if (b1 == "1")
             {
                 b1 = "true";
