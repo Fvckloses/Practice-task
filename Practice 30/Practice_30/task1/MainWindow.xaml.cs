@@ -63,7 +63,7 @@ namespace task1
             SQLiteConnection connection = new SQLiteConnection(@"Data Source=DBTur_firm.db");
             connection.Open();
             SQLiteCommand cmd = new SQLiteCommand(connection);
-            sString str = $"DELETE FROM Tours WHERE idTour = {Convert.ToInt32(DeleteTextBox.Text)}";
+            String str = $"DELETE FROM Tours WHERE idTour = {Convert.ToInt32(DeleteTextBox.Text)}";
             cmd.CommandText = str;
             cmd.ExecuteNonQuery();
             connection.Close();
