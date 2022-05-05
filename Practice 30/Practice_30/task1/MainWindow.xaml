@@ -1,0 +1,44 @@
+﻿<Window x:Class="task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name ="ListViewDB" Grid.Column="1" AutomationProperties.Name="ListViewDB" Margin="0,0,0,217">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="idTour"  DisplayMemberBinding="{Binding Path=idTour}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="TourName" DisplayMemberBinding="{Binding Path=TourName}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="TourPrice" DisplayMemberBinding="{Binding Path=TourPrice}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="TourInfo" DisplayMemberBinding="{Binding Path=TourInfo}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Addtour" HorizontalAlignment="Left" Height="26" Margin="10,91,0,0" VerticalAlignment="Top" Width="106" Click="Addtour" AutomationProperties.Name="Addtour"/>
+        <TextBox x:Name ="TextBoxAdd" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="int string int string"/>
+        <Button Content="delete by id" HorizontalAlignment="Left" Height="26" Margin="10,164,0,0" VerticalAlignment="Top" Width="106" Click="DeleteSelected" AutomationProperties.Name="DeleteTour"/>
+        <TextBox x:Name ="DeleteTextBox" HorizontalAlignment="Left" Margin="10,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListView x:Name ="ListViewDBTourists" Grid.Column="1" AutomationProperties.Name="ListViewDB" Margin="0,217,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="idTourists"  DisplayMemberBinding="{Binding idTourists}"/>
+                    <GridViewColumn Width="100" Header="TouristsLastName" DisplayMemberBinding="{Binding TouristsLastName}"/>
+                    <GridViewColumn Width="100" Header="TouristsFirstName" DisplayMemberBinding="{Binding TouristsFirstName}"/>
+                    <GridViewColumn Width="100" Header="TouristsMidleName" DisplayMemberBinding="{Binding TouristsMidleName}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Addtourist" HorizontalAlignment="Left" Height="26" Margin="10,240,0,0" VerticalAlignment="Top" Width="106" Click="Addtourist" AutomationProperties.Name="Addtour"/>
+        <TextBox x:Name = "TextBoxAddTourist" HorizontalAlignment="Left" Margin="10,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="int string string string"/>
+        <Button Content="change by id" HorizontalAlignment="Left" Height="26" Margin="10,331,0,0" VerticalAlignment="Top" Width="106" Click="ChangeById" AutomationProperties.Name="DeleteTour"/>
+        <TextBox x:Name ="ChangeTextBox" HorizontalAlignment="Left" Margin="10,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="int(id) string string string"/>
+
+    </Grid>
+</Window>
